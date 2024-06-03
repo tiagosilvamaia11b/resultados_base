@@ -180,4 +180,18 @@ body{
         font-size: 2.4rem;
         margin-bottom: 3rem;
     }
+
+    .resumo div {
+        font-size: 1.8rem;
+    }
+
+    .resumo button {
+        margin-top: 2.4rem;
+    }
+    .resumo button:hover{
+        background: var(--resultado-bg);
+        cursor: pointer;
+    }
 }
+
+
