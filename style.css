@@ -9,14 +9,20 @@
     font-size:  62.5%;
     --resultado-bg: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
     --media-bg: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0.00) 100% ); 
-    --white:#FFF; 
     --white:#FFF;
     --light-blue:#CAC9FF;
+    --dark-navy: #303b59;
+    --resumo-div-bg: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
+    --reacao-bg:#FF5555;
+    --memoria-bg:#FFB21E;
+    --verbal-bg:#00BB8F;
+    --visual-bg:#1125D6;
+    --very-ligth-blue:#ECF2FF;
 }
 
-
-body{
+.body{
     font-size: 1.6rem;
+    background: var(--very-ligth-blue);
 }
 
 .resultado {
@@ -24,6 +30,7 @@ body{
     background: var(--resultado-bg);
     text-align: center;
     color: var(--white);
+    border-radius: 0 0 3.2rem 3.2rem;
 }
 
 .resultado h1{
@@ -66,6 +73,7 @@ body{
 
 .resumo{
     padding: 2.4rem 3.2rem;
+    background: var(--white);
 }
 
 .resumo h2{
@@ -84,10 +92,18 @@ body{
     margin-bottom: 1.6rem;
 }
 
-.reesumo > div div{
+.resumo > div div{
     display: flex;
     align-items: center;
     gap: 1.2rem;
+}
+
+.resumo > div strong{
+    color: var(--dark-navy);
+}
+
+.resumo > div strong span{
+    opacity: 0.5;
 }
 
 .resumo_reacao{
@@ -95,7 +111,7 @@ body{
     color: var(--reacao-bg);
 }
 
-.reesumo_memoria{
+.resumo_memoria{
     background: var(--memoria-bg) var(--resumo-div-bg);
     color: var(--memoria-bg);
 }
@@ -110,6 +126,7 @@ body{
     background: var(--visual-bg) var(--resumo-div-bg);
     color: var(--visual-bg);
 }
+
 
 .resumo button{
     margin-top: 0.8rem;
@@ -137,7 +154,7 @@ body{
         grid-template-columns:  1fr 1fr;
         width: 736px;
         background: var(--white);
-        border-radius: 3.2rem 0 0 3.2rem;
+        border-radius: 3.2rem;
     }
 
     .resultado{
@@ -168,12 +185,12 @@ body{
     }
 
     .resultado p{
-        font-size: 3.2rem;
-        margin-bottom: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .resumo {
         padding:  3.8rem 4rem;
+        border-radius: 3.2rem;
     }
 
     .resumo h2 {
@@ -193,5 +210,3 @@ body{
         cursor: pointer;
     }
 }
-
-
